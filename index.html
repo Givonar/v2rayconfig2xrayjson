@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLESS to Xray JSON Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>VLESS to Xray JSON Converter</h1>
+        <p class="subtitle">Paste your VLESS link below and get a valid Xray JSON config instantly. <span class="info-icon" title="See instructions below">ℹ️</span></p>
+    </header>
+
+    <main>
+        <section class="converter">
+            <label for="vlessInput" class="section-title">VLESS Link:</label>
+            <textarea id="vlessInput" rows="3" placeholder="Paste your VLESS link here..."></textarea>
+            <button id="convertBtn">Convert</button>
+            <span id="validationMessage"></span>
+        </section>
+
+        <section class="output">
+            <label for="jsonOutput" class="section-title">Xray JSON Config:</label>
+            <pre id="jsonOutput" readonly></pre>
+            <div class="output-actions">
+                <button id="copyBtn">Copy</button>
+                <button id="saveBtn">Export JSON</button>
+            </div>
+        </section>
+
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Paste a valid VLESS configuration link into the input field above.</li>
+                <li>Click <strong>Convert</strong> to generate the corresponding Xray JSON.</li>
+                <li>Use <strong>Copy</strong> to copy the result, or <strong>Export JSON</strong> to download it.</li>
+                <li>The converter will highlight issues if your link is malformed.</li>
+            </ul>
+            <p>
+                <strong>Example VLESS link:</strong> <br>
+                <code>vless://620bf418-d0ae-491f-a0be-e14a17ff1a61@magic.afteam.ir:5055?security=none&type=tcp&headerType=http&path=&host=journalofbigdata.springeropen.com#🔱 | Magic</code>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+          © 2025 <a href="https://github.com/Givonar/v2rayconfig2xrayjson" target="_blank">Givonar/v2rayconfig2xrayjson</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
