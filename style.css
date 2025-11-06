@@ -1,0 +1,148 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    background-color: #fafafb;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(87deg, #7F7FD5 0%, #86A8E7 100%);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+}
+
+header h1 {
+    margin: 0 0 0.3rem 0;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+}
+
+main {
+    margin: 2rem auto;
+    max-width: 600px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 24px 0 rgba(64, 114, 255, 0.07);
+}
+
+.section-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.converter textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: .6rem;
+    border: 1px solid #86A8E7;
+    margin-bottom: 0.8rem;
+    resize: vertical;
+}
+
+.converter button {
+    background: linear-gradient(90deg,#7f7fd5,#86a8e7);
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.7rem;
+    border-radius: .4rem;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: background .15s;
+    margin-bottom: 0.5rem;
+}
+
+.converter button:hover {
+    background: linear-gradient(90deg,#86a8e7,#7f7fd5);
+}
+
+.converter #validationMessage {
+    display: block;
+    margin-top: .5rem;
+    color: red;
+    min-height: 1.2em;
+    font-size: 0.99em;
+}
+
+.output {
+    margin-top: 2rem;
+}
+
+.output pre {
+    background: #f5f7fb;
+    padding: 1rem;
+    border-radius: .6rem;
+    border: 1px solid #dee6fa;
+    font-size: 0.97em;
+    white-space: pre-wrap;
+    min-height: 100px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 0.7rem;
+}
+
+.output-actions button {
+    background: #86a8e7;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.1rem;
+    border-radius: .4rem;
+    font-size: 0.98rem;
+    cursor: pointer;
+    margin-right: 0.7rem;
+    margin-bottom: 0.2rem;
+    transition: background .13s;
+}
+
+.output-actions button:hover {
+    background: #7f7fd5;
+}
+
+.instructions {
+    margin-top: 2.5rem;
+    font-size: 1.03em;
+}
+
+.instructions ul {
+    padding-left: 1.2em;
+}
+
+.instructions code {
+    background: #eaf2fc;
+    border-radius: .3em;
+    padding: 0.2em 0.5em;
+    font-size: 0.99em;
+    color: #253551;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    font-size: .97em;
+    margin: 3rem 0 1rem 0;
+}
+
+footer a {
+    color: #86a8e7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+    header {
+        padding: 1rem;
+    }
+}
